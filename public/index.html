@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>To Do App</title>
+    </head>
+    <body>
+        <h1>To Do List</h1>
+        <form id="addForm">
+            <input type="text" id="taskInput" placeholder="Add Task">
+            <button type="submit">Add</button>
+        </form>
+        <ul id="taskList">
+        </ul>
+    </body>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./script.js"></script>
+</html>
+
+<style>
+    button{
+    margin-left: 2px;    
+    }
+    #taskList{
+        padding: 10px;
+    }
+    li{
+        margin:10px;
+    }
+    #task-span{
+        text-decoration: line-through;
+    }
+</style>
