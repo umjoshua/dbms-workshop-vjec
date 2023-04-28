@@ -64,27 +64,27 @@ const displayTasks = (tasks) => {
 }
 
 const toggleDoneTask = (id, value) => {
-    axios.patch('http://localhost:3000/toggledone/' + id, { value }).then((res) => {
+    axios.patch('http://localhost:5000/toggledone/' + id, { value }).then((res) => {
         console.log(res);
     })
     getTasks();
 }
 const editTask = (id, newTask) => {
-    axios.patch('http://localhost:3000/edittask/' + id, { newTask }).then((res) => {
+    axios.patch('http://localhost:5000/edittask/' + id, { newTask }).then((res) => {
         console.log(res);
     })
     getTasks();
 }
 
 const DeleteTask = (id) => {
-    axios.delete('http://localhost:3000/deleteTask/' + id).then((res) => {
+    axios.delete('http://localhost:5000/deleteTask/' + id).then((res) => {
         console.log(res);
     })
     getTasks();
 }
 
 const addTasks = (task) => {
-    axios.post('http://localhost:3000/tasks', { task }).then((res) => {
+    axios.post('http://localhost:5000/tasks', { task }).then((res) => {
         console.log(res);
     })
     getTasks()
