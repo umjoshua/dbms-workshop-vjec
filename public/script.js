@@ -3,7 +3,7 @@ const addForm = document.getElementById('addForm');
 const taskInput = document.getElementById('taskInput');
 
 const getTasks = () => {
-    axios.get('http://localhost:3000/tasks').then((res) => {
+    axios.get('http://localhost:5000/tasks').then((res) => {
         displayTasks(res.data.result)
     })
 }

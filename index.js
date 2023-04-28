@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.static('public'));
 
 app.listen(PORT, () => {
-    console.log('Listening on port 3000')
+    console.log('Listening on port 5000')
 })
 
 var con = mysql.createConnection({
